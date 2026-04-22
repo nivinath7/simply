@@ -1,0 +1,5 @@
+["https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/", "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/symptoms/", "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/causes/",
+                  "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/", "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/treatment/", "https://www.nhs.uk/symptoms/hirsutism/",
+                  "https://www.nhs.uk/symptoms/missed-or-late-periods/", "https://www.nhs.uk/conditions/endometriosis/", "https://www.nhs.uk/conditions/periods/period-problems/", "https://www.nhs.uk/symptoms/ovulation-pain/",
+                  "https://www.nhs.uk/symptoms/period-pain/"]
+
