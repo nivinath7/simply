@@ -4,6 +4,7 @@ import json
 import time 
 import os 
 from datetime import datetime 
+import re
 
 def load_urls(filepath: str) -> list[str]:
 
@@ -46,16 +47,18 @@ def scrape_page(url: str) -> dict | None:
         # Extract paragraphs
         paragraphs = content.find_all("p")
         text_blocks = [
-            p.get_text(strip=True)
-            for p in paragraphs
-            if p.get_text(strip=True)
-        ]
+        p.get_text(separator=" ", strip=True)
+        for p in paragraphs
+        if p.get_text(separator=" ", strip=True)
+    ]
 
         # Extract headings
         headings = content.find_all(["h2", "h3"])
         heading_texts = [h.get_text(strip=True) for h in headings]
 
         full_text = "\n\n".join(text_blocks)
+# Add this:
+        full_text = re.sub(r'\s+([.,;:!?])', r'\1', full_text)
 
         if not full_text:
             print(f"  ✗ Empty content")
